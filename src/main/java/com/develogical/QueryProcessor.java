@@ -9,8 +9,9 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
-        if (query.toLowerCase().contains("what is %d plus %d", a1, a2)) {
-            return "a1 + a2";
+        if (query.toLowerCase().contains("largest")) {
+        	String q = query.replaceAll("\\D+","");
+        	print(q);
         }
         return "";
     }
